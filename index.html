@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEAVER LOFT - Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="#">
+            <span class="hidden">WEAVER LOFT</span>
+            <svg
+              version="1.1"
+              id="Layer_1"
+              class="logo_svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 500 500"
+              style="enable-background: new 0 0 500 500"
+              xml:space="preserve"
+            >
+              <g>
+                <polygon
+                  class="logo_svg_g"
+                  points="214.5,183.2 170.2,316 133.8,420.9 206.8,420.9 286.3,183.1 	"
+                ></polygon>
+                <polygon
+                  class="logo_svg_b"
+                  points="91,79.6 19.8,79.6 133.8,420.9 170.2,316 	"
+                ></polygon>
+                <polygon
+                  class="logo_svg_g"
+                  points="407.5,79.1 328.4,315.4 292.8,420.9 365.7,420.9 480.2,79.1 	"
+                ></polygon>
+                <polygon
+                  class="logo_svg_b"
+                  points="295.5,214.9 295.3,214.1 258.7,322.9 292.8,420.9 328.4,315.4 	"
+                ></polygon>
+              </g>
+            </svg>
+          </a>
+        </h1>
+
+        <nav class="gnb">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">주요사업</a></li>
+            <li><a href="#">매거진</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">채용공고</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-utils">
+          <div class="search-box">
+            <input type="text" placeholder="키워드를 입력하세요." />
+            <button type="button" class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="search-dropdown">
+              <p class="search-tit">추천 검색어</p>
+              <ul class="drop-list">
+                <li class="tag-btn tag-btn--search">#디자인</li>
+                <li class="tag-btn tag-btn--search">#기획</li>
+                <li class="tag-btn tag-btn--search">#퍼블리셔</li>
+                <li class="tag-btn tag-btn--search">#코딩테스트</li>
+                <li class="tag-btn tag-btn--search">#백엔드개발자</li>
+              </ul>
+            </div>
+          </div>
+
+          <button type="button" class="sitemap-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-recommendation" style="display: none">
+        <!-- 기본 숨김 -->
+        <strong>추천 검색어</strong>
+        <div class="tags">
+          <a href="#">#디자인</a>
+          <a href="#">#기획</a>
+          <a href="#">#퍼블리셔</a>
+          <a href="#">#코딩테스트</a>
+          <a href="#">#백앤드개발자</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="subpage">
+      <section class="intro-hero swiper">
+        <div class="swiper-wrapper">
+          <div class="inner swiper-slide">
+            <img
+              src="./images/intro-hero-bg.png"
+              alt="intro-hero-bg"
+              class="intro-hero-bg"
+            />
+            <div class="content container">
+              <span class="tag">Event</span>
+              <h2 class="title">메인타이틀 문구가 들어갑니다.</h2>
+              <p class="desc">
+                서브 타이틀 내용이 들어갑니다. 서브 타이틀 내용이 들어갑니다.<br />
+                서브 타이틀 내용이 들어갑니다.
+              </p>
+            </div>
+          </div>
+          <div class="inner swiper-slide">
+            <img
+              src="./images/intro-hero-bg.png"
+              alt="intro-hero-bg"
+              class="intro-hero-bg"
+            />
+            <div class="content container">
+              <span class="tag">Event</span>
+              <h2 class="title">메인타이틀 문구가 들어갑니다.</h2>
+              <p class="desc">
+                서브 타이틀 내용이 들어갑니다. 서브 타이틀 내용이 들어갑니다.<br />
+                서브 타이틀 내용이 들어갑니다.
+              </p>
+            </div>
+          </div>
+          <div class="inner swiper-slide">
+            <img
+              src="./images/intro-hero-bg.png"
+              alt="intro-hero-bg"
+              class="intro-hero-bg"
+            />
+            <div class="content container">
+              <span class="tag">Event</span>
+              <h2 class="title">메인타이틀 문구가 들어갑니다.</h2>
+              <p class="desc">
+                서브 타이틀 내용이 들어갑니다. 서브 타이틀 내용이 들어갑니다.<br />
+                서브 타이틀 내용이 들어갑니다.
+              </p>
+            </div>
+          </div>
+          <div class="inner swiper-slide">
+            <img
+              src="./images/intro-hero-bg.png"
+              alt="intro-hero-bg"
+              class="intro-hero-bg"
+            />
+            <div class="content container">
+              <span class="tag">Event</span>
+              <h2 class="title">메인타이틀 문구가 들어갑니다.</h2>
+              <p class="desc">
+                서브 타이틀 내용이 들어갑니다. 서브 타이틀 내용이 들어갑니다.<br />
+                서브 타이틀 내용이 들어갑니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-controls container">
+          <button type="button" class="prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button type="button" class="next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+
+        <div class="slide-pagination container">
+          <div class="pagination-inner"></div>
+          <button type="button" class="swiper-toggle" aria-label="일시정지">
+            <!-- pause icon -->
+            <span class="icon icon-pause">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="20px"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M199.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8zM375.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="icon icon-play">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="15px"
+                width="15px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M133 440a35.37 35.37 0 0 1-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0 1 35.77.45l247.85 148.36a36 36 0 0 1 0 61l-247.89 148.4A35.5 35.5 0 0 1 133 440z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="subpage-section">
+        <div class="container">
+          <div class="inner">
+            <h2 class="section-title">PROJECT</h2>
+
+            <div class="category-list">
+              <button type="button" class="tag-btn tag-btn--tab active">
+                #ALL
+              </button>
+              <button type="button" class="tag-btn tag-btn--tab">#UIUX</button>
+              <button type="button" class="tag-btn tag-btn--tab">
+                #DESIGN
+              </button>
+              <button type="button" class="tag-btn tag-btn--tab">
+                #DEVELOPMENT
+              </button>
+            </div>
+
+            <!-- 그리드 리스트 -->
+            <div class="grid-container">
+              <!-- 아이템 1 -->
+              <article class="card">
+                <figure class="card-thumb">
+                  <img
+                    src="./images/project-list-thumb-1.png"
+                    alt="썸네일 이미지"
+                  />
+                </figure>
+                <div class="card-info">
+                  <h3 class="sub-title">타이틀이 들어갑니다.</h3>
+                  <p class="sub-desc">
+                    서브타이틀이 들어갑니다. 서브타이틀이 들어갑니다.
+                  </p>
+                </div>
+              </article>
+
+              <!-- 아이템 2 -->
+              <article class="card">
+                <figure class="card-thumb">
+                  <img
+                    src="./images/project-list-thumb-2.png"
+                    alt="썸네일 이미지"
+                  />
+                </figure>
+                <div class="card-info">
+                  <h3 class="sub-title">타이틀이 들어갑니다.</h3>
+                  <p class="sub-desc">
+                    서브타이틀이 들어갑니다. 서브타이틀이 들어갑니다.
+                    서브타이틀이 들어갑니다.
+                  </p>
+                </div>
+              </article>
+
+              <!-- 아이템 3 -->
+              <article class="card">
+                <figure class="card-thumb">
+                  <img
+                    src="./images/project-list-thumb-3.png"
+                    alt="썸네일 이미지"
+                  />
+                </figure>
+                <div class="card-info">
+                  <h3 class="sub-title">타이틀이 들어갑니다.</h3>
+                  <p class="sub-desc">
+                    서브타이틀이 들어갑니다. 서브타이틀이 들어갑니다.
+                  </p>
+                </div>
+              </article>
+
+              <!-- 아이템 4 -->
+              <article class="card">
+                <figure class="card-thumb">
+                  <img
+                    src="./images/project-list-thumb-4.png"
+                    alt="썸네일 이미지"
+                  />
+                </figure>
+                <div class="card-info">
+                  <h3 class="sub-title">타이틀이 들어갑니다.</h3>
+                  <p class="sub-desc">
+                    서브타이틀이 들어갑니다. 서브타이틀이 들어갑니다.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="btn-view-more">
+                VIEW MORE
+                <span class="icon">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 32 32"
+                    height="30px"
+                    width="30px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M 21.1875 9.28125 L 19.78125 10.71875 L 24.0625 15 L 4 15 L 4 17 L 24.0625 17 L 19.78125 21.28125 L 21.1875 22.71875 L 27.90625 16 Z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="floating-menu">
+      <button type="button" class="btn-popup">
+        <svg
+          stroke="currentColor"
+          fill="none"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          height="30px"
+          width="30px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M8 9h8"></path>
+          <path d="M8 13h6"></path>
+          <path
+            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"
+          ></path>
+        </svg>
+        <span>POPUP</span>
+      </button>
+    </aside>
+
+    <div class="modal-wrap">
+      <div class="dimmer"></div>
+      <div class="modal-box">
+        <div class="modal-content">
+          <h3>팝업 타이틀이 들어갑니다.</h3>
+        </div>
+        <button type="button" class="btn-close">닫기</button>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="inner container">
+        <div class="footer-logo">
+          <img
+            src="./images/footer_logo.svg"
+            alt="weaver loft logo"
+            class="logo-white"
+          />
+        </div>
+        <p class="copyright">Copyright © All Rights Reserved.</p>
+        <div class="sns-links">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
