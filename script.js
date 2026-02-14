@@ -1,5 +1,6 @@
 "use strict";
 
+// intro hero 슬라이드 기능
 introHeroSlide();
 function introHeroSlide() {
   const container = document.querySelector(".intro-hero");
@@ -26,8 +27,11 @@ function introHeroSlide() {
       delay: 3000,
     },
   };
+
+  // 슬라이드 autoplay 기능
   const carousel = new Swiper(container, options);
   const toggleBtn = document.querySelector(".swiper-toggle");
+  if (!toggleBtn) return;
   toggleBtn.addEventListener("click", () => {
     if (carousel.autoplay.running) {
       carousel.autoplay.stop();
@@ -41,6 +45,7 @@ function introHeroSlide() {
   });
 }
 
+// 모달 기능
 initModal();
 function initModal() {
   const trigger = document.querySelector(".floating-menu");
@@ -56,15 +61,26 @@ function initModal() {
       modal.classList.remove("modal-open");
     }
   });
+  // esc 누르면 modal닫히게
+  document.addEventListener("keydown", (e) => {
+    if (!modal.classList.contains("modal-open")) return;
+    if (e.key === "Escape") {
+      modal.classList.remove("modal-open");
+    }
+  });
 }
 
+// 추천 검색어 드롭다운
 searchDrop();
 function searchDrop() {
   const headerUtil = document.querySelector(".header-utils");
   if (!headerUtil) return;
   const searchBox = headerUtil.querySelector(".search-box");
-  const dropBox = headerUtil.querySelector(".search-dropdown");
+  const dropBox = searchBox.querySelector(".search-dropdown");
+  const dropTags = dropBox.querySelectorAll(".drop-list .tag-btn");
+  const input = searchBox.querySelector("input");
 
+  // 드롭다운 열고 닫기
   document.addEventListener("click", (e) => {
     if (searchBox.contains(e.target)) {
       dropBox.classList.add("active");
@@ -72,9 +88,36 @@ function searchDrop() {
       dropBox.classList.remove("active");
     }
   });
+  //추천 검색어 클릭
+  dropTags.forEach((tag) => {
+    tag.addEventListener("click", () => {
+      const text = tag.textContent.replace("#", "").trim();
+      input.value = text;
+      input.focus();
+    });
+  });
 }
 
-//추가
-// 1. 모달,추천검색어 esc 닫기
-// 2. 추천검색어 클릭시 input 값 채우기
-// 3. 콘텐츠 탭 구성
+// 컨텐츠 탭 버튼 기능
+cardTab();
+function cardTab() {
+  const cateBtn = document.querySelectorAll(".category-list .tag-btn");
+  const cards = document.querySelectorAll(".grid-container .card");
+  const mapping = [[0, 1, 2, 3], [0, 1], [2], [3]];
+
+  cateBtn.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      cateBtn.forEach((b) => {
+        b.classList.remove("active");
+      });
+      cards.forEach((item) => {
+        item.classList.remove("active");
+      });
+      btn.classList.add("active");
+
+      mapping[index].forEach((cardIdx) => {
+        cards[cardIdx].classList.add("active");
+      });
+    });
+  });
+}
